@@ -8,9 +8,9 @@ const b612 = B612({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: "EELA GROUP | Digital Marketing Agency",
-  description: "EELA GROUP transforms struggling businesses into high-converting digital brands.",
+export const metadata = {
+  title: "EELA Group | Digital Marketing & Web Development",
+  description: "We help businesses grow with SEO, Ads, and Web Development.",
 };
 
 export default function RootLayout({

@@ -6,19 +6,20 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Hero from "./components/Hero";
 import Section from "./components/Section";
+import Footer from "./components/Footer";
 
 const problems = [
-  "Outdated or slow websites",
-  "Run ads without strategy",
-  "Don't appear on Google",
-  "Waste money on random agencies",
+  "⚡ Have outdated or slow websites",
+  "🎯 Run ads without strategy",
+  "📉 Don't appear on Google",
+  "💸 Waste money on random agencies",
 ];
 
-const vision = [
-  "Your website brings inquiries every day",
-  "Customers trust you instantly",
-  "Competitors struggle while you dominate",
-  "You get leads even while you sleep",
+const visionItems = [
+  { icon: "📈", text: "Your website brings inquiries every day" },
+  { icon: "🤝", text: "Customers trust you instantly" },
+  { icon: "⚔️", text: "Competitors struggle while you dominate" },
+  { icon: "💤", text: "You get leads even while you sleep" },
 ];
 
 const deliver = [
@@ -179,7 +180,7 @@ export default function Home() {
 
       
 
-      <Section ref={servicesRef} id="services" className="bg-[#ff2a2a]" contentClassName="items-center justify-center text-center">
+      <Section ref={servicesRef} id="services" className="bg-[#fa0201]" contentClassName="items-center justify-center text-center">
         <div className="services-text max-w-4xl space-y-5">
           <p className="text-2xl font-bold leading-tight md:text-4xl">
             Stop Losing Customers Online While Your Competitors Grow Every Day.
@@ -194,12 +195,12 @@ export default function Home() {
       <Section
         ref={problemsRef}
         id="problems"
-        backgroundImage="/images/problems-bg.png"
+        backgroundImage="/images/problemso-bg.png"
         overlayClassName="bg-black/60"
         contentClassName="items-center"
       >
         <div className="w-full">
-          <h2 className="mb-8 text-center text-3xl font-bold md:text-5xl">Problems Holding Your Growth Back</h2>
+          <h2 className="mb-8 text-center text-3xl font-bold md:text-5xl">Why Most Businesses Fail Online</h2>
           <div className="grid gap-5 md:grid-cols-2">
             {problems.map((item) => (
               <article
@@ -216,53 +217,65 @@ export default function Home() {
       <Section
         ref={visionRef}
         id="vision"
-        backgroundImage="/images/vision-bg.jpeg"
+        backgroundImage="/images/visiono-bg.png"
         overlayClassName="bg-black/58"
         contentClassName="items-center"
       >
         <div className="w-full">
           <h2 className="mb-8 text-center text-3xl font-bold md:text-5xl">Our Vision For Your Business</h2>
-          <div className="grid gap-5 md:grid-cols-2">
-            {vision.map((item) => (
-              <article key={item} className="vision-card rounded-2xl border border-[#ff2a2a]/50 bg-black/35 p-7">
-                <p className="text-xl font-semibold md:text-2xl">{item}</p>
-              </article>
-            ))}
-          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+  {visionItems.map((item, index) => (
+    <div
+      key={index}
+      className="border border-red-500 rounded-xl p-6 flex items-center gap-4 backdrop-blur-sm bg-black/30"
+    >
+      <span className="text-2xl">{item.icon}</span>
+
+      <p className="text-lg md:text-xl font-semibold">
+        {item.text}
+      </p>
+    </div>
+  ))}
+</div>
           <p className="mt-10 text-center text-lg font-semibold text-[#ff5f5f] md:text-2xl">
             That&apos;s not luck. That&apos;s EELA GROUP STRATEGY SYSTEM
           </p>
         </div>
       </Section>
 
-      <Section
-        ref={deliverRef}
-        id="deliver"
-        backgroundImage="/images/section2-bg.png"
-        overlayClassName="bg-black/70"
-        contentClassName="items-center"
-      >
-        <div className="grid w-full gap-10 md:grid-cols-2">
-          <div className="deliver-left text-3xl font-bold leading-tight md:text-6xl">
-            We don&apos;t guess.
-            <br />
-            We engineer results.
-          </div>
+<Section
+  id="deliver"
+  backgroundImage="/images/section23-bg.png"
+  overlayClassName="bg-black/65"
+  contentClassName="items-center justify-end"
+>
+  <div className="w-full max-w-6xl px-6 md:px-12 flex items-center justify-end min-h-screen">
 
-          <div className="space-y-4 self-center text-lg md:text-2xl">
-            {deliver.map((item) => (
-              <p key={item} className="deliver-item rounded-xl border border-white/15 bg-black/35 p-4">
-                {item}
-              </p>
-            ))}
-          </div>
-        </div>
-      </Section>
+   <div className="max-w-lg ml-auto">
+    
+    <h2 className="mb-6 text-3xl font-bold md:text-5xl">
+      What we deliver:
+    </h2>
+
+    <div className="space-y-4 text-lg font-semibold md:text-2xl">
+      <p>→ Conversion-focused website design</p>
+      <p>→ SEO that brings organic traffic</p>
+      <p>→ Paid ads that generate ROI</p>
+      <p>→ Full digital growth system</p>
+    </div>
+
+    <p className="mt-8 text-sm text-white/80 md:text-base">
+      We don’t guess.We engineer results.
+    </p>
+
+  </div>
+  </div>
+</Section>
 
      <Section
   ref={combineRef}
   id="combine"
-  backgroundImage="/images/combine-bg.jpeg"
+  backgroundImage="/images/combines-bg.png"
   overlayClassName="bg-black/65"
   contentClassName="items-center justify-start"
 >
@@ -294,15 +307,16 @@ export default function Home() {
       <Section
         ref={finalCtaRef}
         id="final-cta"
-        className="bg-[#ff2a2a]"
+        className="bg-[#fa0201] pb-0 mb-0"
         contentClassName="items-center justify-center text-center"
       >
-        <div className="cta-content max-w-3xl space-y-8">
-          <h2 className="text-3xl font-bold leading-tight md:text-6xl">
-            Will you grow... or get left behind?
-            <br />
-            Let&apos;s build your digital dominance today
-          </h2>
+        <div className="cta-content w-full space-y-8">
+          <h2 className="text-3xl font-bold leading-tight md:text-6xl whitespace-nowrap">
+  Will you grow... or get left behind?
+</h2>
+<h2 className="text-3xl md:text-6xl font-bold leading-tight text-white md:whitespace-nowrap mt-4">
+  Let&apos;s build your digital dominance today
+</h2>
 
           <a
   href="#contact"
@@ -314,87 +328,10 @@ export default function Home() {
           <div id="contact-anchor" className="h-1 w-full" />
         </div>
       </Section>
-      <section
-  id="contact"
-  className="w-full bg-black text-white py-20 px-6 md:px-10"
->
-  <div className="max-w-5xl mx-auto">
+     
 
-    {/* Heading */}
-    <h2 className="text-3xl md:text-4xl font-bold mb-4">
-      Let’s Talk About Your Growth 🚀
-    </h2>
-
-    <p className="text-gray-400 mb-10">
-      Tell us about your business and goals.
-      We’ll get back to you with a strategy that actually works.
-    </p>
-
-    {/* Form */}
-    <form className="grid grid-cols-1 md:grid-cols-2 gap-6">
-
-      <input
-        type="text"
-        placeholder="Your Name"
-        className="p-3 bg-transparent border border-gray-600 rounded"
-        required
-      />
-
-      <input
-        type="email"
-        placeholder="Email Address"
-        className="p-3 bg-transparent border border-gray-600 rounded"
-        required
-      />
-
-      <input
-        type="tel"
-        placeholder="Phone Number"
-        className="p-3 bg-transparent border border-gray-600 rounded"
-        required
-      />
-
-      <input
-        type="text"
-        placeholder="Business Name"
-        className="p-3 bg-transparent border border-gray-600 rounded"
-      />
-
-      {/* Dropdown */}
-      <select className="p-3 bg-black border border-gray-600 rounded col-span-1 md:col-span-2">
-        <option>Select Service</option>
-        <option>Website Development</option>
-        <option>SEO</option>
-        <option>Paid Ads</option>
-        <option>Digital Marketing</option>
-        <option>Full Growth System</option>
-      </select>
-
-      {/* Message */}
-      <textarea
-        placeholder="Tell us about your requirement..."
-        rows={5}
-        className="p-3 bg-transparent border border-gray-600 rounded col-span-1 md:col-span-2"
-      />
-
-      {/* Button */}
-      <button
-        type="submit"
-        className="bg-red-500 hover:bg-red-600 transition-all px-6 py-3 rounded col-span-1 md:col-span-2"
-      >
-        Get Free Consultation
-      </button>
-    </form>
-
-    {/* Contact Info */}
-    <div className="mt-10 text-gray-400">
-      <p>📧 info@eelaagroup.com</p>
-      <p>📞 +91 XXXXX XXXXX</p>
-    </div>
-
-  </div>
-</section>
-
+<Footer />
+ 
     </main>
   );
 }

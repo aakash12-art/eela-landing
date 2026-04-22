@@ -6,7 +6,7 @@ type SectionProps = {
   overlayClassName?: string;
   className?: string;
   contentClassName?: string;
-  children: ReactNode;
+  children?: ReactNode;
 };
 
 const Section = forwardRef<HTMLElement, SectionProps>(function Section(
@@ -17,7 +17,7 @@ const Section = forwardRef<HTMLElement, SectionProps>(function Section(
     <section
       id={id}
       ref={ref}
-      className={`relative min-h-screen w-full overflow-hidden ${className}`}
+      className={`relative w-full overflow-hidden ${className}`}
       style={
         backgroundImage
           ? {
