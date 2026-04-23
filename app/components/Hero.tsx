@@ -48,8 +48,8 @@ const Hero = forwardRef<HTMLElement>(function Hero(_, ref) {
     {/* BIG TEXT */}
     <div className="absolute top-[18%] left-[3%] z-10 text-left">
   <h1 className="text-5xl md:text-7xl font-extrabold leading-[1.1] tracking-tight">
-    <span className="text-white">Rule </span>
-    <span className="text-red-500">Your Market</span>
+    <span className="text-[#fa0201]">Rule </span>
+    <span className="text-[#fa0201]">Your Market</span>
   </h1>
 </div>
 

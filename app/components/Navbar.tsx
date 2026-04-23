@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const navItems = [
  { label: "Services", href: "/services" },
-  { label: "About", href: "#vision" },
+  { label: "About", href: "/about" },
   { label: "Let's Talk", href: "/contact" },
 ];
 
@@ -34,7 +34,7 @@ export default function Navbar() {
     : "backdrop-blur-lg bg-white/20 border border-white/30 text-white hover:bg-white/30 hover:scale-105"
 }`}
 >
-  {item.label}
+  {item.label === "Let's Talk" ? "→ Let's Talk" : item.label}
 </a>
 ))}
         </nav>

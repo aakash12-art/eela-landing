@@ -36,6 +36,11 @@ export default function ContactPage() {
               placeholder="Your Email"
               className="p-3 rounded-lg bg-black/40 border border-white/20 focus:outline-none focus:border-red-500"
             />
+            <input
+  type="tel"
+  placeholder="Your Phone Number"
+  className="p-3 rounded-lg bg-black/40 border border-white/20 focus:outline-none focus:border-red-500"
+/>
 
             <textarea
               rows={5}
@@ -43,11 +48,19 @@ export default function ContactPage() {
               className="p-3 rounded-lg bg-black/40 border border-white/20 focus:outline-none focus:border-red-500 resize-none"
             />
 
-            <button className="bg-red-500 hover:bg-red-600 transition p-3 rounded-lg font-semibold">
-              Send Message
-            </button>
+            <button
+  className="bg-[#fa0201] hover:bg-red-600 transition px-6 py-2 rounded-md text-sm font-medium self-center"
+>
+  Submit Form
+</button>
           </form>
+           <div className="text-center mt-16 mb-10">
+  <h2 className="text-3xl md:text-5xl font-bold text-[#fa0201]">
+    Rule Your Market
+  </h2>
+</div>
         </div>
+        
       </section>
  
  

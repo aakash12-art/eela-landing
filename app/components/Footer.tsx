@@ -24,7 +24,7 @@ export default function Footer() {
         <div>
           <h3 className="font-semibold mb-3">Follow Us</h3>
           <div className="flex gap-4 text-gray-400">
-            <a href="#">LinkedIn</a>
+            <a href="#">WhatsApp</a>
             <a href="https://www.instagram.com/eelaagroup/">Instagram</a>
             <a href="https://www.facebook.com/profile.php?id=61569106396079">Facebook</a>
           </div>

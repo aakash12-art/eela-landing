@@ -7,21 +7,45 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Hero from "./components/Hero";
 import Section from "./components/Section";
 import Footer from "./components/Footer";
-
+import { Zap, Target, Search, DollarSign } from "lucide-react";
+import { TrendingUp, ShieldCheck, Swords, Moon } from "lucide-react";
 const problems = [
-  "⚡ Have outdated or slow websites",
-  "🎯 Run ads without strategy",
-  "📉 Don't appear on Google",
-  "💸 Waste money on random agencies",
+  {
+    text: "Have outdated or slow websites",
+    icon: Zap,
+  },
+  {
+    text: "Run ads without strategy",
+    icon: Target,
+  },
+  {
+    text: "Don't appear on Google",
+    icon: Search,
+  },
+  {
+    text: "Waste money on random agencies",
+    icon: DollarSign,
+  },
 ];
 
-const visionItems = [
-  { icon: "📈", text: "Your website brings inquiries every day" },
-  { icon: "🤝", text: "Customers trust you instantly" },
-  { icon: "⚔️", text: "Competitors struggle while you dominate" },
-  { icon: "💤", text: "You get leads even while you sleep" },
+const visions = [
+  {
+    text: "Your website brings inquiries every day",
+    icon: TrendingUp,
+  },
+  {
+    text: "Customers trust you instantly",
+    icon: ShieldCheck,
+  },
+  {
+    text: "Competitors struggle while you dominate",
+    icon: Swords,
+  },
+  {
+    text: "You get leads even while you sleep",
+    icon: Moon,
+  },
 ];
-
 const deliver = [
   "Conversion-focused website design",
   "SEO that brings organic traffic",
@@ -201,16 +225,38 @@ export default function Home() {
       >
         <div className="w-full">
           <h2 className="mb-8 text-center text-3xl font-bold md:text-5xl">Why Most Businesses Fail Online</h2>
-          <div className="grid gap-5 md:grid-cols-2">
-            {problems.map((item) => (
-              <article
-                key={item}
-                className="problem-card rounded-2xl border border-white/25 bg-white/10 p-7 backdrop-blur-md transition-transform duration-300 hover:scale-[1.02]"
-              >
-                <p className="text-xl font-semibold md:text-2xl">{item}</p>
-              </article>
-            ))}
-          </div>
+         <div className="grid gap-5 md:grid-cols-2">
+  {problems.map((item, index) => {
+    const Icon = item.icon;
+
+    return (
+      <div
+        key={index}
+        className="flex items-center gap-4 p-4 md:p-5 rounded-xl bg-white/5 backdrop-blur-lg border border-white/10 hover:border-red-500 transition"
+      >
+        {/* ICON BOX */}
+        <div className="w-10 h-10 flex items-center justify-center rounded-lg bg-white/10">
+          <Icon className="w-5 h-5 text-red-500" />
+        </div>
+
+        {/* TEXT */}
+        <p className="text-white font-medium">
+          {item.text}
+        </p>
+      </div>
+    );
+  })}
+</div>
+
+{/* 👇 ADD THIS EXACTLY HERE */}
+<div className="mt-10 text-center">
+  <p className="text-lg md:text-4xl font-semibold text-white/80">
+    But it can be fixed by{" "}
+    <span className="text-[#fa0201] font-bold">
+      EELAA GROUP
+    </span>
+  </p>
+</div>
         </div>
       </Section>
 
@@ -222,23 +268,32 @@ export default function Home() {
         contentClassName="items-center"
       >
         <div className="w-full">
-          <h2 className="mb-8 text-center text-3xl font-bold md:text-5xl">Our Vision For Your Business</h2>
+          <h2 className="mb-8 text-center text-3xl font-bold md:text-5xl">Imagine This for Your Business</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-  {visionItems.map((item, index) => (
+  {visions.map((item, index) => {
+  const Icon = item.icon;
+
+  return (
     <div
       key={index}
-      className="border border-red-500 rounded-xl p-6 flex items-center gap-4 backdrop-blur-sm bg-black/30"
+      className="flex items-center gap-4 p-4 md:p-5 rounded-xl bg-white/5 backdrop-blur-lg border border-white/10 hover:border-red-500 transition"
     >
-      <span className="text-2xl">{item.icon}</span>
+      
+      {/* ICON BOX */}
+      <div className="w-10 h-10 flex items-center justify-center rounded-lg bg-white/10">
+        <Icon className="w-5 h-5 text-red-500" />
+      </div>
 
-      <p className="text-lg md:text-xl font-semibold">
+      {/* TEXT */}
+      <p className="text-white font-medium">
         {item.text}
       </p>
     </div>
-  ))}
+  );
+})}
 </div>
-          <p className="mt-10 text-center text-lg font-semibold text-[#ff5f5f] md:text-2xl">
-            That&apos;s not luck. That&apos;s EELA GROUP STRATEGY SYSTEM
+          <p className="mt-10 text-center text-lg font-semibold text-[#fa0201] md:text-3xl">
+            That&apos;s not luck. That&apos;s EELA GROUP Strategy System
           </p>
         </div>
       </Section>
@@ -249,26 +304,26 @@ export default function Home() {
   overlayClassName="bg-black/65"
   contentClassName="items-center justify-end"
 >
-  <div className="w-full max-w-6xl px-6 md:px-12 flex items-center justify-end min-h-screen">
+  <div className="w-full max-w-6xl px-6 md:px-20 lg:px-32 flex items-center justify-center md:justify-end min-h-[80vh] md:min-h-screen">
 
-   <div className="max-w-lg ml-auto">
-    
-    <h2 className="mb-6 text-3xl font-bold md:text-5xl">
-      What we deliver:
-    </h2>
+    <div className="max-w-lg">
+      
+      <h2 className="mb-6 text-3xl font-bold md:text-5xl">
+        What we deliver:
+      </h2>
 
-    <div className="space-y-4 text-lg font-semibold md:text-2xl">
-      <p>→ Conversion-focused website design</p>
-      <p>→ SEO that brings organic traffic</p>
-      <p>→ Paid ads that generate ROI</p>
-      <p>→ Full digital growth system</p>
+      <div className="space-y-4 text-lg font-semibold md:text-2xl">
+        <p>→ Conversion-focused website design</p>
+        <p>→ SEO that brings organic traffic</p>
+        <p>→ Paid ads that generate ROI</p>
+        <p>→ Full digital growth system</p>
+      </div>
+
+      <p className="mt-8 text-sm text-white/80 md:text-base">
+        We don’t guess. We engineer results.
+      </p>
+
     </div>
-
-    <p className="mt-8 text-sm text-white/80 md:text-base">
-      We don’t guess.We engineer results.
-    </p>
-
-  </div>
   </div>
 </Section>
 
@@ -311,16 +366,23 @@ export default function Home() {
         contentClassName="items-center justify-center text-center"
       >
         <div className="cta-content w-full space-y-8">
-          <h2 className="text-3xl font-bold leading-tight md:text-6xl whitespace-nowrap">
-  Will you grow... or get left behind?
-</h2>
-<h2 className="text-3xl md:text-6xl font-bold leading-tight text-white md:whitespace-nowrap mt-4">
-  Let&apos;s build your digital dominance today
-</h2>
+
+  {/* 👇 NEW LINE ADDED */}
+  <p className="text-5xl md:text-5xl font-bold text-white text-center max-w-6xl mx-auto leading-tight">
+  "A website without leads and marketing without results are just decorations that drain your money"
+</p>
+
+  <h2 className="text-3xl font-bold leading-tight md:text-6xl whitespace-nowrap">
+    Will you grow... or get left behind?
+  </h2>
+
+  <h2 className="text-3xl md:text-6xl font-bold leading-tight text-white md:whitespace-nowrap mt-4">
+    Let&apos;s build your digital dominance today
+  </h2>
 
           <a
-  href="#contact"
-  className="cta-button rounded-full bg-black px-8 py-4 text-base font-semibold text-white transition-transform duration-300 hover:scale-105 md:text-lg"
+  href="/contact"
+  className="cta-button rounded-full bg-white px-8 py-4 text-base font-semibold text-[#fa0201] transition-transform duration-300 hover:scale-105 md:text-lg"
 >
   Get Free Consultation
 </a>
