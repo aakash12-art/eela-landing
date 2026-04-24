@@ -7,9 +7,9 @@ export default function ContactPage() {
     <GlassNavbar />
       {/* BACKGROUND SECTION */}
       <section
-        className="relative min-h-screen flex items-center justify-center px-6 text-white"
+        className="min-h-screen flex items-center justify-center pt-28 md:pt-32"
         style={{
-          backgroundImage: "url('/images/section23-bg.png')",
+          backgroundImage: "url('/images/section2312-bg.png')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -21,7 +21,7 @@ export default function ContactPage() {
         <div className="relative z-10 w-full max-w-2xl bg-white/5 backdrop-blur-lg p-8 rounded-2xl border border-white/10">
           
           <h1 className="text-3xl md:text-4xl font-bold mb-6 text-center">
-            Let’s Talk
+            Let’s Talk 
           </h1>
 
           <form className="flex flex-col gap-5">

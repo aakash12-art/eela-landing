@@ -225,7 +225,7 @@ export default function Home() {
       >
         <div className="w-full">
           <h2 className="mb-8 text-center text-3xl font-bold md:text-5xl">Why Most Businesses Fail Online</h2>
-         <div className="grid gap-5 md:grid-cols-2">
+         <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
   {problems.map((item, index) => {
     const Icon = item.icon;
 
@@ -269,7 +269,7 @@ export default function Home() {
       >
         <div className="w-full">
           <h2 className="mb-8 text-center text-3xl font-bold md:text-5xl">Imagine This for Your Business</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
   {visions.map((item, index) => {
   const Icon = item.icon;
 
@@ -368,23 +368,27 @@ export default function Home() {
         <div className="cta-content w-full space-y-8">
 
   {/* 👇 NEW LINE ADDED */}
-  <p className="text-5xl md:text-5xl font-bold text-white text-center max-w-6xl mx-auto leading-tight">
-  "A website without leads and marketing without results are just decorations that drain your money"
-</p>
-
-  <h2 className="text-3xl font-bold leading-tight md:text-6xl whitespace-nowrap">
+ <h1 className="text-3xl md:text-5xl font-bold text-white text-center leading-tight max-w-none">
+  <span className="block">
+    "A website without leads and marketing without 
+  </span>
+  <span className="block">
+    results are just decorations that drain your money"
+  </span>
+</h1>
+  <p className="text-3xl font-bold leading-tight md:text-4xl whitespace-nowrap">
     Will you grow... or get left behind?
-  </h2>
+  </p>
 
-  <h2 className="text-3xl md:text-6xl font-bold leading-tight text-white md:whitespace-nowrap mt-4">
+  <p className="text-3xl md:text-4xl font-bold leading-tight text-white md:whitespace-nowrap mt-4">
     Let&apos;s build your digital dominance today
-  </h2>
+  </p>
 
           <a
   href="/contact"
   className="cta-button rounded-full bg-white px-8 py-4 text-base font-semibold text-[#fa0201] transition-transform duration-300 hover:scale-105 md:text-lg"
 >
-  Get Free Consultation
+  Get Free Consultation →
 </a>
 
           <div id="contact-anchor" className="h-1 w-full" />

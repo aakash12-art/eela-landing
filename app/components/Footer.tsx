@@ -8,7 +8,8 @@ export default function Footer() {
         <div>
           <h2 className="text-xl font-bold mb-3">EELA GROUP</h2>
           <p className="text-gray-400">
-            We build high-converting digital systems that help businesses scale faster.
+            We build high-converting digital systems that help businesses scale faster.<br />
+            MSME : UDAYAM-TN05-0092951
           </p>
         </div>
 
