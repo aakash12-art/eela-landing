@@ -24,6 +24,7 @@ const Section = forwardRef<HTMLElement, SectionProps>(function Section(
               backgroundImage: `url(${backgroundImage})`,
               backgroundSize: "cover",
               backgroundPosition: "center",
+              backgroundAttachment: "fixed",
             }
           : undefined
       }
