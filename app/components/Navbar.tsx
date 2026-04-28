@@ -1,6 +1,8 @@
 import Image from "next/image";
 import { useState } from "react";
 
+
+
 const navItems = [
   { label: "Services", href: "/services" },
   { label: "About", href: "/about" },
@@ -34,8 +36,8 @@ export default function Navbar() {
               href={item.href}
               className={`transition-all duration-300 px-3 py-1.5 rounded-full ${
                 item.label === "Let's Talk"
-                  ? "bg-white text-black font-semibold hover:bg-gray-200 shadow-md"
-                  : "backdrop-blur-lg bg-white/20 border border-white/30 text-white hover:bg-white/30 hover:scale-105"
+                  ? "bg-white text-[#fa0201] font-semibold hover:bg-gray-200 shadow-md"
+                  : "backdrop-blur-xl bg-white/10 border border-white/20 shadow-lg text-white hover:bg-white/30 hover:scale-105"
               }`}
             >
               {item.label === "Let's Talk" ? "Let's Talk →" : item.label}
@@ -72,5 +74,6 @@ export default function Navbar() {
         </div>
       )}
     </header>
+    
   );
 }

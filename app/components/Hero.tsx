@@ -5,16 +5,13 @@ import Navbar from "./Navbar";
 const Hero = forwardRef<HTMLElement>(function Hero(_, ref) {
   return (
     <section
-      id="hero"
-      ref={ref}
-      className="relative h-screen w-full overflow-hidden"
-      style={{
-        backgroundImage: "url(/images/heroe-bg.png)",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundAttachment: "fixed",
-      }}
-    >
+  id="hero"
+  ref={ref}
+  className="relative h-screen w-full overflow-hidden 
+  bg-[url('/images/heroe-mobile-bg.png')] 
+  md:bg-[url('/images/heroe-bg.png')] 
+  bg-cover bg-center bg-fixed"
+>
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/60" />
 

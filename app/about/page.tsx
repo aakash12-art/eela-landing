@@ -8,13 +8,11 @@ export default function AboutPage() {
 
       {/* SECTION */}
       <section
-        className="relative min-h-screen flex flex-col justify-center px-6 py-20 pt-28 md:pt-32 text-white"
-        style={{
-          backgroundImage: "url('/images/problems1-bg.png')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
+  className="relative min-h-screen flex flex-col justify-center px-6 py-20 pt-28 md:pt-32 text-white 
+  bg-[url('/images/problems1-mobile-bg.png')] 
+  md:bg-[url('/images/problems1-bg.png')] 
+  bg-cover bg-center"
+>
         {/* Overlay */}
         <div className="absolute inset-0 bg-black/70"></div>
 
@@ -31,7 +29,7 @@ export default function AboutPage() {
 
   {/* LEFT - VISION */}
   <div>
-    <h2 className="text-3xl md:text-6xl font-bold mb-4 text-[#fa0201]">
+    <h2 className="text-3xl md:text-5xl font-bold mb-4 text-[#fa0201]">
       Our Vision
     </h2>
     <p className="text-white/90 text-lg md:text-xl leading-relaxed max-w-md">
@@ -42,7 +40,7 @@ export default function AboutPage() {
 
   {/* RIGHT - MISSION */}
   <div className="md:text-right md:ml-auto">
-    <h2 className="text-3xl md:text-6xl font-bold mb-4 text-[#fa0201] text-left">
+    <h2 className="text-3xl md:text-5xl font-bold mb-4 text-[#fa0201] text-left">
       Our Mission
     </h2>
     <p className="text-white/90 text-lg md:text-xl leading-relaxed max-w-md ml-auto text-left">

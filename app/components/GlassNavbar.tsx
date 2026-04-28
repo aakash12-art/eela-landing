@@ -57,7 +57,7 @@ export default function GlassNavbar() {
 
           <Link
             href="/contact"
-            className="px-4 py-1.5 rounded-full bg-white text-black font-semibold hover:bg-gray-200"
+            className="px-4 py-1.5 rounded-full bg-white text-[#fa0201] font-semibold hover:bg-gray-200"
           >
              Let's Talk →
           </Link>

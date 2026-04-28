@@ -49,20 +49,18 @@ const services = [
     <GlassNavbar />
       {/* SECTION WITH BACKGROUND */}
       <section
-        className="relative min-h-screen flex flex-col justify-center px-6 py-18 pt-28 md:pt-45 text-white"
-        style={{
-          backgroundImage: "url('/images/problemsoa-bg.png')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
+  className="relative min-h-screen flex flex-col justify-center px-6 py-18 pt-28 md:pt-45 text-white 
+  bg-[url('/images/problemsoa-mobile-bg.png')] 
+  md:bg-[url('/images/problemsoa-bg.png')] 
+  bg-cover bg-center"
+>
         {/* DARK OVERLAY (IMPORTANT) */}
         <div className="absolute inset-0 bg-black/70"></div>
 
         {/* CONTENT */}
         <div className="relative z-10">
           <h1 className="text-4xl md:text-5xl font-bold text-center mb-14">
-            OUR <span className="text-red-500">SERVICES</span>
+            OUR <span className="text-[#fa0201]">SERVICES</span>
           </h1>
 
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">

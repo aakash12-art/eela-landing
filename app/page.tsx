@@ -217,12 +217,14 @@ export default function Home() {
       </Section>
 
       <Section
-        ref={problemsRef}
-        id="problems"
-        backgroundImage="/images/problemso-bg.png"
-        overlayClassName="bg-black/60"
-        contentClassName="items-center"
-      >
+  ref={problemsRef}
+  id="problems"
+  className="bg-[url('/images/problemso-mobile-bg.png')] 
+md:bg-[url('/images/problemso-bg.png')] 
+bg-cover bg-center bg-fixed"
+  overlayClassName="bg-black/60"
+  contentClassName="items-center"
+>
         <div className="w-full">
           <h2 className="mb-8 text-center text-3xl font-bold md:text-5xl">Why Most Businesses Fail Online</h2>
          <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
@@ -261,12 +263,14 @@ export default function Home() {
       </Section>
 
       <Section
-        ref={visionRef}
-        id="vision"
-        backgroundImage="/images/visiono-bg.png"
-        overlayClassName="bg-black/58"
-        contentClassName="items-center"
-      >
+  ref={visionRef}
+  id="vision"
+  className="bg-[url('/images/visiono-mobile-bg.png')] 
+md:bg-[url('/images/visiono-bg.png')] 
+bg-cover bg-center bg-fixed"
+  overlayClassName="bg-black/58"
+  contentClassName="items-center"
+>
         <div className="w-full">
           <h2 className="mb-8 text-center text-3xl font-bold md:text-5xl">Imagine This for Your Business</h2>
           <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
@@ -300,7 +304,9 @@ export default function Home() {
 
 <Section
   id="deliver"
-  backgroundImage="/images/section23-bg.png"
+  className="bg-[url('/images/section23-mobile-bg.png')] 
+md:bg-[url('/images/section23-bg.png')] 
+bg-cover bg-center bg-fixed"
   overlayClassName="bg-black/65"
   contentClassName="items-center justify-end"
 >
@@ -330,7 +336,9 @@ export default function Home() {
      <Section
   ref={combineRef}
   id="combine"
-  backgroundImage="/images/combines-bg.png"
+   className="bg-[url('/images/combines-mobile-bg.png')] 
+md:bg-[url('/images/combines-bg.png')] 
+bg-cover bg-center bg-fixed"
   overlayClassName="bg-black/65"
   contentClassName="items-center justify-start"
 >
