@@ -64,7 +64,7 @@ export default function Navbar() {
               onClick={() => setIsOpen(false)}
               className={`w-full text-center transition-all duration-300 px-4 py-2 rounded-full ${
                 item.label === "Let's Talk"
-                  ? "bg-white text-black font-semibold"
+                  ? "bg-white text-[#fa0201] font-semibold"
                   : "bg-white/20 border border-white/30 text-white"
               }`}
             >

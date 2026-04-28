@@ -33,7 +33,7 @@ const services = [
     icon: Search,
   },
   {
-    title: "LinkedInn Ads and Optimisation ",
+    title: "LinkedIn Ads and Optimisation ",
     desc: "Engaging content that builds trust.",
     icon: PenTool,
   },

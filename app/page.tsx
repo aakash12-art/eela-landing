@@ -297,7 +297,7 @@ bg-cover bg-center"
 <div className="mt-10 text-center">
   <p className="text-lg md:text-4xl font-semibold text-white/80">
     But it can be fixed by{" "}
-    <span className="text-[#fa0201] font-bold">
+    <span className="text-[#fa0201] font-bold font-futura">
       EELAA GROUP
     </span>
   </p>
@@ -339,8 +339,8 @@ bg-cover bg-center"
   );
 })}
 </div>
-          <p className="mt-10 text-center text-lg font-semibold text-[#fa0201] md:text-3xl">
-            That&apos;s not luck. That&apos;s EELA GROUP Strategy System
+          <p className="mt-10 text-center text-lg font-semibold text-white md:text-3xl">
+            That&apos;s not luck. That&apos;s  <span className="font-futura text-[#fa0201]">EELA GROUP</span> Strategy System
           </p>
         </div>
       </Section>
