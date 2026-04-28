@@ -10,7 +10,7 @@ const Hero = forwardRef<HTMLElement>(function Hero(_, ref) {
   className="relative h-screen w-full overflow-hidden 
   bg-[url('/images/heroe-mobile-bg.png')] 
   md:bg-[url('/images/heroe-bg.png')] 
-  bg-cover bg-center bg-fixed"
+  bg-cover bg-center"
 >
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/60" />

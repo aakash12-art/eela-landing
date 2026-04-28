@@ -419,7 +419,7 @@ bg-cover bg-center"
         <div className="cta-content w-full space-y-8">
 
   {/* 👇 NEW LINE ADDED */}
- <h1 className="text-3xl md:text-5xl font-bold text-white text-center leading-tight max-w-none">
+ <h1 className="text-2xl md:text-5xl font-bold text-white text-center leading-tight max-w-3xl mx-auto px-4 break-words">
   <span className="block">
     "A website without leads and marketing without 
   </span>
@@ -427,7 +427,7 @@ bg-cover bg-center"
     results are just decorations that drain your money"
   </span>
 </h1>
-  <p className="text-3xl font-bold leading-tight md:text-4xl whitespace-nowrap">
+  <p className="text-xl md:text-4xl font-bold leading-tight text-center px-4">
     Will you grow... or get left behind?
   </p>
 
