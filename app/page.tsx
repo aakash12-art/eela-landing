@@ -419,7 +419,7 @@ bg-cover bg-center"
         <div className="cta-content w-full space-y-8">
 
   {/* 👇 NEW LINE ADDED */}
- <h1 className="text-2xl md:text-5xl font-bold text-white text-center leading-tight max-w-3xl mx-auto px-4 break-words">
+ <h1 className="text-3xl md:text-5xl font-bold text-white text-center leading-tight max-w-none">
   <span className="block">
     "A website without leads and marketing without 
   </span>
