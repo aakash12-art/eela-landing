@@ -427,7 +427,7 @@ bg-cover bg-center"
     results are just decorations that drain your money"
   </span>
 </h1>
-  <p className="text-xl md:text-4xl font-bold leading-tight text-center px-4">
+  <p className="text-3xl md:text-4xl font-bold leading-tight text-center px-2">
     Will you grow... or get left behind?
   </p>
 
