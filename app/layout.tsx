@@ -1,6 +1,14 @@
 import type { Metadata } from "next";
 import { B612 } from "next/font/google";
 import "./globals.css";
+import { Tenor_Sans } from "next/font/google";
+
+
+const tenor = Tenor_Sans({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-tenor",
+});
 
 const b612 = B612({
   weight: ["400", "700"],
@@ -20,7 +28,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${b612.variable} h-full antialiased`}>
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className={`${tenor.variable} min-h-full flex flex-col bg-[#0a0a0a] text-white`}>
+    {children}
+  </body>
     </html>
   );
 }

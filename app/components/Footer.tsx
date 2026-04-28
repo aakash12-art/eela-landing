@@ -1,3 +1,4 @@
+import { FaInstagram, FaFacebook, FaWhatsapp } from "react-icons/fa";
 export default function Footer() {
   return (
     <footer className="bg-black text-white border-t border-white/10 pt-10 pb-6 bg-black">
@@ -25,17 +26,24 @@ export default function Footer() {
         <div>
           <h3 className="font-semibold mb-3">Follow Us</h3>
           <div className="flex gap-4 text-gray-400">
-            <a href="#">WhatsApp</a>
-            <a href="https://www.instagram.com/eelaagroup/">Instagram</a>
-            <a href="https://www.facebook.com/profile.php?id=61569106396079">Facebook</a>
+            
+             <a href="https://instagram.com" target="_blank">
+    <FaInstagram className="w-6 h-6 text-white hover:text-pink-500 transition" />
+  </a>
+
+  <a href="https://facebook.com" target="_blank">
+    <FaFacebook className="w-6 h-6 text-white hover:text-blue-500 transition" />
+  </a>
+
+  <a href="https://wa.me/1234567890" target="_blank">
+    <FaWhatsapp className="w-6 h-6 text-white hover:text-green-500 transition" />
+  </a>
           </div>
         </div>
 
       </div>
 
-      <div className="text-center text-gray-500 text-sm pb-6">
-        © {new Date().getFullYear()} EELA GROUP. All rights reserved.
-      </div>
+      
     </footer>
   );
 }

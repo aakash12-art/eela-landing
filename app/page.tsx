@@ -193,6 +193,49 @@ export default function Home() {
           start: "top 70%",
         },
       });
+      gsap.to("#problems", {
+  backgroundPosition: "50% 80%",
+  ease: "none",
+  scrollTrigger: {
+    trigger: problemsRef.current,
+    start: "top bottom",
+    end: "bottom top",
+    scrub: true,
+  },
+});
+
+gsap.to("#vision", {
+  backgroundPosition: "50% 80%",
+  ease: "none",
+  scrollTrigger: {
+    trigger: visionRef.current,
+    start: "top bottom",
+    end: "bottom top",
+    scrub: true,
+  },
+});
+
+gsap.to("#deliver", {
+  backgroundPosition: "50% 80%",
+  ease: "none",
+  scrollTrigger: {
+    trigger: deliverRef.current,
+    start: "top bottom",
+    end: "bottom top",
+    scrub: true,
+  },
+});
+
+gsap.to("#combine", {
+  backgroundPosition: "50% 80%",
+  ease: "none",
+  scrollTrigger: {
+    trigger: combineRef.current,
+    start: "top bottom",
+    end: "bottom top",
+    scrub: true,
+  },
+});
     });
 
     return () => context.revert();
@@ -221,7 +264,7 @@ export default function Home() {
   id="problems"
   className="bg-[url('/images/problemso-mobile-bg.png')] 
 md:bg-[url('/images/problemso-bg.png')] 
-bg-cover bg-center bg-fixed"
+bg-cover bg-center"
   overlayClassName="bg-black/60"
   contentClassName="items-center"
 >
@@ -267,7 +310,7 @@ bg-cover bg-center bg-fixed"
   id="vision"
   className="bg-[url('/images/visiono-mobile-bg.png')] 
 md:bg-[url('/images/visiono-bg.png')] 
-bg-cover bg-center bg-fixed"
+bg-cover bg-center"
   overlayClassName="bg-black/58"
   contentClassName="items-center"
 >
@@ -306,7 +349,7 @@ bg-cover bg-center bg-fixed"
   id="deliver"
   className="bg-[url('/images/section23-mobile-bg.png')] 
 md:bg-[url('/images/section23-bg.png')] 
-bg-cover bg-center bg-fixed"
+bg-cover bg-center"
   overlayClassName="bg-black/65"
   contentClassName="items-center justify-end"
 >
@@ -338,7 +381,7 @@ bg-cover bg-center bg-fixed"
   id="combine"
    className="bg-[url('/images/combines-mobile-bg.png')] 
 md:bg-[url('/images/combines-bg.png')] 
-bg-cover bg-center bg-fixed"
+bg-cover bg-center"
   overlayClassName="bg-black/65"
   contentClassName="items-center justify-start"
 >
