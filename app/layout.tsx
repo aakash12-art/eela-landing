@@ -17,8 +17,18 @@ const b612 = B612({
 });
 
 export const metadata = {
-  title: "EELA Group | Digital Marketing & Web Development",
-  description: "We help businesses grow with SEO, Ads, and Web Development.",
+  title: "EELAA Group - Rule Your Market",
+  description:
+    "EELAA Group helps businesses grow through digital marketing, branding, and high-converting strategies.",
+  keywords: [
+    "digital marketing",
+    "branding",
+    "EELAA Group",
+    "marketing agency",
+  ],
+  icons: {
+    icon: "/logooo.png",
+  },
 };
 
 export default function RootLayout({
