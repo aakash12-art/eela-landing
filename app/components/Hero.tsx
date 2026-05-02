@@ -23,7 +23,7 @@ const Hero = forwardRef<HTMLElement>(function Hero(_, ref) {
         {/* LEFT TEXT */}
         <div className="max-w-[600px] relative z-20">
           <h1 className="text-white text-sm md:text-xl font-semibold leading-[1.8] whitespace-nowrap scale-[0.9] md:scale-100 origin-left">
-            <div>EELA GROUP turns struggling businesses</div>
+            <div> <span className="font-futura">EELA GROUP</span> turns struggling businesses</div>
             <div>into high-converting digital brands</div>
             <div>using powerful marketing plus modern</div>
             <div>websites</div>
