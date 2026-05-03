@@ -17,9 +17,9 @@ const b612 = B612({
 });
 
 export const metadata = {
-  title: "EELAA Group - Rule Your Market",
+  title: "EELAA GROUP - Rule Your Market",
   description:
-    "EELAA Group helps businesses grow through digital marketing, branding, and high-converting strategies.",
+    "EELAA GROUP helps businesses grow through digital marketing, branding, and high-converting strategies.",
  
   icons: {
     icon: "/favicon.ico",
